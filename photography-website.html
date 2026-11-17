@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your Name Photography</title>
+<style>
+:root{--bg:#faf8f5;--surface:#fff;--text:#2a2623;--muted:#7a716a;--accent:#b08968;--line:#e8e2da;--ph:#efe9e1;color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#171513;--surface:#211e1b;--text:#f1ece6;--muted:#a69d94;--accent:#c9a27c;--line:#352f2a;--ph:#2b2622;color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;height:auto}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.6;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3{font-weight:400;letter-spacing:.02em;margin:0}
+a{color:inherit}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;border-bottom:1px solid var(--line)}
+.logo{font-size:1.2rem;letter-spacing:.15em;text-transform:uppercase;text-decoration:none}
+nav a{margin-left:22px;font:.85rem system-ui,sans-serif;text-transform:uppercase;letter-spacing:.12em;text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.hero{text-align:center;padding:90px 5vw 70px}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem)}
+.hero p{color:var(--muted);max-width:520px;margin:16px auto 28px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 34px;border-radius:2px;font:.85rem system-ui,sans-serif;text-transform:uppercase;letter-spacing:.15em;text-decoration:none}
+.btn:hover{opacity:.88}
+section{padding:70px 5vw;max-width:1100px;margin:0 auto}
+h2{font-size:2rem;text-align:center;margin-bottom:12px}
+.sub{text-align:center;color:var(--muted);margin:0 auto 40px;max-width:520px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about p{margin:0 0 14px}
+.photo{position:relative;background:var(--ph);border:1px dashed var(--line);border-radius:3px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font:.85rem system-ui,sans-serif;overflow:hidden;cursor:pointer}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo span{padding:12px}
+.ratio-p{aspect-ratio:4/5}.ratio-l{aspect-ratio:4/3}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:16px}
+.card h3{font-size:1.5rem;margin:16px 0 6px}
+.card p{color:var(--muted);margin:0 0 16px;font-size:.95rem}
+.card .btn{padding:11px 24px}
+.contact{text-align:center}
+footer{text-align:center;padding:30px 5vw;color:var(--muted);font:.8rem system-ui,sans-serif;border-top:1px solid var(--line)}
+@media(max-width:700px){.about,.grid{grid-template-columns:1fr}nav a{margin-left:14px}}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#top">Your Name</a>
+  <nav><a href="#about">About</a><a href="#sessions">Sessions</a><a href="#contact">Contact</a></nav>
+</header>
+
+<div class="hero" id="top">
+  <h1>Photography that tells your story</h1>
+  <p>Weddings, couples, seniors, and families — captured naturally and beautifully.</p>
+  <a class="btn" href="#contact">Get in Touch</a>
+</div>
+
+<section id="about">
+  <h2 style="text-align:left">About Me</h2>
+  <div class="about">
+    <div>
+      <!-- EDIT THIS PARAGRAPH: write a little about yourself -->
+      <p>Hi, I'm [Your Name]! Write a short paragraph about yourself here — how you got into photography, what you love to capture, and what clients can expect when they work with you.</p>
+    </div>
+    <div class="photo ratio-p" title="Click to add your photo"><span>Click to add your photo</span></div>
+  </div>
+</section>
+
+<section id="sessions">
+  <h2>Book a Session</h2>
+  <p class="sub">Choose the type of session you're looking for.</p>
+  <div class="grid">
+    <!-- To use a permanent image, replace the placeholder with: <img src="your-photo.jpg" alt="Weddings"> inside the .photo div -->
+    <div class="card">
+      <div class="photo ratio-l" title="Click to add a picture"><span>Weddings photo — click to add</span></div>
+      <h3>Weddings</h3>
+      <p>Full-day coverage of your ceremony, reception, and every moment in between.</p>
+      <a class="btn" href="#contact" data-type="Weddings">Book Weddings</a>
+    </div>
+    <div class="card">
+      <div class="photo ratio-l" title="Click to add a picture"><span>Couples photo — click to add</span></div>
+      <h3>Couples</h3>
+      <p>Engagements, anniversaries, or just because — relaxed, romantic sessions.</p>
+      <a class="btn" href="#contact" data-type="Couples">Book Couples</a>
+    </div>
+    <div class="card">
+      <div class="photo ratio-l" title="Click to add a picture"><span>Seniors photo — click to add</span></div>
+      <h3>Seniors</h3>
+      <p>Celebrate this milestone with portraits that show your personality.</p>
+      <a class="btn" href="#contact" data-type="Seniors">Book Seniors</a>
+    </div>
+    <div class="card">
+      <div class="photo ratio-l" title="Click to add a picture"><span>Families photo — click to add</span></div>
+      <h3>Families</h3>
+      <p>Genuine, joyful portraits of the people who matter most.</p>
+      <a class="btn" href="#contact" data-type="Families">Book Families</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Let's Work Together</h2>
+  <p class="sub">Have a date in mind or a question? Send me a message and I'll get back to you soon.</p>
+  <!-- CHANGE the email address below to your real one -->
+  <a class="btn" id="touch" href="mailto:youremail@example.com?subject=Photography%20Inquiry">Get in Touch</a>
+</section>
+
+<footer>&copy; 2026 Your Name Photography</footer>
+
+<script>
+// Click any picture space to preview a photo from your device (preview only; use <img src> for permanent photos)
+document.querySelectorAll('.photo').forEach(function(box){
+  box.addEventListener('click',function(){
+    var inp=document.createElement('input');inp.type='file';inp.accept='image/*';
+    inp.onchange=function(){
+      var f=inp.files[0];if(!f)return;
+      var r=new FileReader();
+      r.onload=function(){
+        var old=box.querySelector('img');if(old)old.remove();
+        var img=document.createElement('img');img.src=r.result;img.alt='';box.appendChild(img);
+        var s=box.querySelector('span');if(s)s.style.display='none';
+      };
+      r.readAsDataURL(f);
+    };
+    inp.click();
+  });
+});
+// Book buttons pre-fill the email subject with the session type
+document.querySelectorAll('[data-type]').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.getElementById('touch').href='mailto:youremail@example.com?subject='+encodeURIComponent(b.dataset.type+' Session Inquiry');
+  });
+});
+</script>
+</body>
+</html>
